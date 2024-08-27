@@ -1,0 +1,52 @@
+* {
+  top: 0;
+  left: 0;
+}
+
+/* Add this to make the app responsive */
+@media (max-width: 768px) {
+  /* For tablets and small laptops */
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile devices */
+  .container {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  .card {
+    flex-direction: column;
+  }
+}
+
+/* Add this to make the navbar responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Add this to make the footer responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer ul {
+    flex-direction: column;
+  }
+  .footer li {
+    margin-bottom: 10px;
+  }
+}
