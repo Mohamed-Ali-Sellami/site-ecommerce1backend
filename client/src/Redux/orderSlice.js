@@ -4,7 +4,7 @@ import axios from "axios";
 /////////////////////////GET order/////////////////////////////////////
 export const getorder = createAsyncThunk("/getorder", async () => {
   try {
-    let resultat = axios.get("site-commerce-ivory.vercel.app/order/all");
+    let resultat = axios.get("site-ecommerce1backend.vercel.app/order/all");
     return await resultat;
   } catch (error) {
     console.log(error);
@@ -13,7 +13,7 @@ export const getorder = createAsyncThunk("/getorder", async () => {
 /////////////////////////ADD order//////////////////////////////////////////
 export const addorder = createAsyncThunk("/addorder", async (neworder) => {
   try {
-    let resultat = axios.post("site-commerce-ivory.vercel.app/order/add", neworder);
+    let resultat = axios.post("site-ecommerce1backend.vercel.app/order/add", neworder);
     return await resultat;
   } catch (error) {
     console.log(error);
@@ -23,7 +23,7 @@ export const addorder = createAsyncThunk("/addorder", async (neworder) => {
 
 export const deleteorder = createAsyncThunk("/deleteorder", async (id) => {
   try {
-    let resultat = axios.delete(`site-commerce-ivory.vercel.app/order/${id}`);
+    let resultat = axios.delete(`site-ecommerce1backend.vercel.app/order/${id}`);
     return await resultat;
   } catch (error) {
     console.log(error);
@@ -34,7 +34,7 @@ export const updateorder = createAsyncThunk(
   "/updateorder",
   async ({ id, uporder }) => {
     try {
-      let resultat = axios.put(`site-commerce-ivory.vercel.app/order/${id}`, uporder);
+      let resultat = axios.put(`site-ecommerce1backend.vercel.app/order/${id}`, uporder);
       return await resultat;
     } catch (error) {
       console.log(error);

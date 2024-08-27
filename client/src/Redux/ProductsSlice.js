@@ -7,7 +7,7 @@ export const getproduct=createAsyncThunk('/getproduct',async()=> {
 
 try {
 
- let resultat= axios.get('site-commerce-ivory.vercel.app/product/all')  
+ let resultat= axios.get('site-ecommerce1backend.vercel.app/product/all')  
  return await resultat;
     
 } catch (error) {
@@ -19,7 +19,7 @@ export const addproduct=createAsyncThunk('/addproduct',async(newproduct)=> {
 
   try {
   
-   let resultat= axios.post('site-commerce-ivory.vercel.app/product/add',newproduct)  
+   let resultat= axios.post('site-ecommerce1backend.vercel.app/product/add',newproduct)  
    return await resultat;
       
   } catch (error) {
@@ -32,7 +32,7 @@ export const deleteproduct=createAsyncThunk('/deleteproduct',async(id)=> {
 
   try {
   
-   let resultat= axios.delete(`site-commerce-ivory.vercel.app/product/${id}`)  
+   let resultat= axios.delete(`site-ecommerce1backend.vercel.app/product/${id}`)  
    return await resultat;
       
   } catch (error) {
@@ -44,7 +44,7 @@ export const updateproduct=createAsyncThunk('/updateproduct',async({id,upproduct
 
   try {
   
-   let resultat= axios.put(`site-commerce-ivory.vercel.app/product/${id}`,upproduct)  
+   let resultat= axios.put(`site-ecommerce1backend.vercel.app/product/${id}`,upproduct)  
    return await resultat;
       
   } catch (error) {
