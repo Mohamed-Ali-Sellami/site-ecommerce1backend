@@ -1,21 +1,15 @@
 import React from 'react'
 import "./Accessoires.css"
-import { useSelector } from 'react-redux'
-import Card from './Card'
 const Accessoires = () => {
 
   const allproducts = useSelector((store)=>store.Product?.product)
   console.log("voici all products",allproducts)
    const accessoires = allproducts.filter((data) => data?.Category === "Accessoires");
-   console.log(accessoires)
+   console.log(smartphones)
 
   return (
-    <div className='content1'>
+    <div className='content-accessoires'>
       <h1>Accessoires</h1>
-
-      <div className='boxphone'>
-    {accessoires?.map((el)=><Card data={el}/>)}
-      </div>
     </div>
   )
 }

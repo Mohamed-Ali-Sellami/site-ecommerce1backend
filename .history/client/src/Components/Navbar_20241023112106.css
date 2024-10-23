@@ -80,23 +80,3 @@
     padding: 7px;
     
   }
-
-  .navbar ul li a {
-    text-decoration: none;
-  }
-
-  .navbar .liste a {
-    text-decoration: none; /* Supprime le soulignement */
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px;
-}
-
-/* Style au survol */
-.navbar .liste a:hover {
-    color: yellow;
-    padding-bottom: 0.5rem;
-    
-}
-

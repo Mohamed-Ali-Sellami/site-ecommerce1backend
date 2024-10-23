@@ -10,7 +10,7 @@ const Accessoires = () => {
    console.log(accessoires)
 
   return (
-    <div className='content1'>
+    <div className='content-accessoires'>
       <h1>Accessoires</h1>
 
       <div className='boxphone'>

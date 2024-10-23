@@ -97,6 +97,14 @@
 .navbar .liste a:hover {
     color: yellow;
     padding-bottom: 0.5rem;
-    
+    border-bottom: 2px solid yellow;
 }
 
+/* Supprime les puces de liste */
+.liste {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}

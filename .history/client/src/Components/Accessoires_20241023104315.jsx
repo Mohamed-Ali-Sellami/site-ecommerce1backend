@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Accessoires.css"
 import { useSelector } from 'react-redux'
-import Card from './Card'
 const Accessoires = () => {
 
   const allproducts = useSelector((store)=>store.Product?.product)
@@ -10,7 +9,7 @@ const Accessoires = () => {
    console.log(accessoires)
 
   return (
-    <div className='content1'>
+    <div className='content-accessoires'>
       <h1>Accessoires</h1>
 
       <div className='boxphone'>
